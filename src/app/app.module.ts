@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     VideosListComponent,
-    
+
   ],
   imports: [
     BrowserModule,

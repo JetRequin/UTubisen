@@ -1,11 +1,9 @@
-<h1 align="center">Welcome to app-videos 👋</h1>
+<h1 align="center">Welcome to Utubisen 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> Youtube
-
-### 🏠 [Homepage](appcomponent.html)
+> Angular App with Youtube API. You can receive top viddeo of deo of USA, filter them by topic or keywords.
 
 ## Install
 
@@ -27,14 +25,10 @@ npm run test
 
 ## Author
 
-👤 **Clément Ducollet & Dylan Metans**
+👤 **Clément Ducollet and Dylan Metans**
 
-* Website: Clément Ducollet & Dylan Metans
 * Github: [@JetRequin](https://github.com/JetRequin)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
