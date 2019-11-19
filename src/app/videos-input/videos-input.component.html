@@ -1,0 +1,16 @@
+<!-- INPUT  -----------------------------------------------------------------------   -->
+<!-- Search area keyword  -->
+<div #textarea >
+  <input #keyword type="text" placeholder="Search"
+         (keydown.enter)="OnInput(keyword.value)" required minlength="1" class="form-control">
+</div>
+
+<!-- Button choose video category -->
+<div class="btn-group" role="group">
+  <button class="btn btn-secondary " (click)="launcherTopic('Music')">Music</button>
+  <button class="btn btn-secondary " (click)="launcherTopic('Gaming')">Gaming</button>
+  <button class="btn btn-secondary " (click)="launcherTopic('Sport')">Sport</button>
+  <button class="btn btn-secondary " (click)="launcherTopic('Entertainment')">Entertainment</button>
+  <button class="btn btn-secondary " (click)="launcherTopic('LifeStyle')">LifeStyle</button>
+  <button class="btn btn-secondary " (click)="launcherTopic('Society')">Society</button>
+</div>

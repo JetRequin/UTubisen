@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VideosListComponent } from './videos-list/videos-list.component';
 import { AppRoutingModule } from './app-routing.module';
+import { VideosInputComponent } from './videos-input/videos-input.component';
 // Add the Router module
 
 @NgModule({
   declarations: [
     AppComponent,
     VideosListComponent,
+    VideosInputComponent,
 
   ],
   imports: [

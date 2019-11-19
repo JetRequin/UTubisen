@@ -1,9 +1,9 @@
 <h1 align="center">Welcome to Utubisen 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.1-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> Angular App with Youtube API. You can receive top viddeo of deo of USA, filter them by topic or keywords.
+> Angular App with Youtube API. You can receive top video of USA, filter them by topic or keywords.
 
 ## Install
 

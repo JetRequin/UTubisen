@@ -15,7 +15,7 @@ import { EventEmitter } from 'events';
 
 export class VideosListComponent implements OnInit {
 
-  nbVideos = 1;
+  nbVideos = 10;
   videos: Video[];
 
   private queriesListener: Subject<any> = new Subject();
@@ -27,17 +27,6 @@ export class VideosListComponent implements OnInit {
 
   ngOnInit() {
     this.printVideoList('', '', this.nbVideos);
-  }
-
-  // Get videos with the corresponding topic
-  launcherTopic(topic: string) {
-    this.printVideoList('', topic, this.nbVideos);
-
-  }
-
-  // Launch search with keyword
-  OnInput(keyword: string) {
-    this.printVideoList(keyword, '', this.nbVideos);
   }
 
   printVideoList(keyword: string, topic: string, nbVideos: number) {

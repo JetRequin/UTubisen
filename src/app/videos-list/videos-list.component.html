@@ -1,20 +1,4 @@
-<!-- INPUT  -----------------------------------------------------------------------   -->
-<!-- Search area keyword  -->
-<div #textarea >
-  <input #keyword type="text" placeholder="Search"
-  (keydown.enter)="OnInput(keyword.value)" required minlength="1" class="form-control">
-</div>
-
-<!-- Button choose video category -->
-<div class="btn-group" role="group">
-  <button class="btn btn-secondary " (click)="launcherTopic('Music')">Music</button>
-  <button class="btn btn-secondary " (click)="launcherTopic('Gaming')">Gaming</button>
-  <button class="btn btn-secondary " (click)="launcherTopic('Sport')">Sport</button>
-  <button class="btn btn-secondary " (click)="launcherTopic('Entertainment')">Entertainment</button>
-  <button class="btn btn-secondary " (click)="launcherTopic('LifeStyle')">LifeStyle</button>
-  <button class="btn btn-secondary " (click)="launcherTopic('Society')">Society</button>
-</div>
-
+<app-videos-input [nbVideos] = "nbVideos"></app-videos-input>
 <!--Begin container video list -->
 <div>
 
@@ -22,11 +6,6 @@
     <div *ngFor="let video of videos" class="col-xl-3 col-md-6 mb-4">    
 
       <div id="video_box" class="card border-0 shadow vh-50">
-
-        <!-- <iframe id="ytplayer" type="text/html" width="640" height="360"
-        src="http://www.youtube.com/embed/{{video.id.videoId}}?autoplay=1"
-        frameborder="0" ></iframe>-->
-
         <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="blank">
           <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="Video snippet thumbnail">
         </a>

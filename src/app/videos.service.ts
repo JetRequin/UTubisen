@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 
 export class VideosService {
 
-apiKey = 'AIzaSyAcmP6Yl5ILeaiJLUDXtdKxnRKn7hv36Ng';
+apiKey = 'AIzaSyBV1V__rPr1FHHaiVUybvWorMhWMtJlKNI';
 // apiKey : string = '';
 // API key that send request to Youtube API
 
