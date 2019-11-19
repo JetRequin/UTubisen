@@ -1,0 +1,45 @@
+
+
+ <!-- INPUT  -->
+
+<div #textarea >
+  <input #keyword type="text" placeholder="Search"
+  (keydown.enter)="OnInput(keyword.value)" required minlength="1" class="form-control">
+</div>
+
+<div class="btn-group" role="group">
+  <div class="row">
+  <button class="btn btn-secondary" (click)="launcherTopic('Music')">Music</button>
+  <button class="btn btn-secondary" (click)="launcherTopic('Gaming')">Gaming</button>
+  <button class="btn btn-secondary" (click)="launcherTopic('Sport')">Sport</button>
+  <button class="btn btn-secondary" (click)="launcherTopic('Entertainment')">Entertainment</button>
+  <button class="btn btn-secondary" (click)="launcherTopic('LifeStyle')">LifeStyle</button>
+  <button class="btn btn-secondary" (click)="launcherTopic('Society')">Society</button>
+  </div>
+</div>
+
+<!--Begin container video list -->
+<div>
+
+  <div class="row">
+    <div *ngFor="let video of videos" class="col-xl-3 col-md-6 mb-4">    
+
+      <div class="card border-0 shadow vh-50">
+        <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="blank">
+          <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="Video snippet thumbnail">
+        </a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">
+            <a href="https://www.youtube.com/watch?v={{video.id.videoId}}">{{video.snippet.title}}
+            </a>
+          </h5>
+          <div class="card-text text-black-50">{{video.snippet.description.slice(0, 5)}}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--End row -->
+
+</div>
+<!--End container video list -->

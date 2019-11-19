@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { VideosListComponent } from './videos-list/videos-list.component';
+import { AppRoutingModule } from './app-routing.module';
+// Add the Router module
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VideosListComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

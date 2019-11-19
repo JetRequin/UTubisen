@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*IMPORT BOOTSTRAP
+ Do the basic responsive layout of the videos*/
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/*IMPORT MATERIAL
+ Spinner styles
+*/
+
