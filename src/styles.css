@@ -8,3 +8,32 @@
  Spinner styles
 */
 
+h1 {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+  background-color: #6c757d;
+  color: white;
+
+}
+
+.btn-group{
+  margin-top: 3%;
+  width: 100%;
+}
+
+#video_box{
+  margin-top: 3%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  background-color: #6c757d;
+  color: white;
+}

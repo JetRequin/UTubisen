@@ -27,7 +27,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 
 export class AppComponent {
-  title:String = 'app-videos';
+  title:String = 'Utubisen';
 
   
   constructor(private spinner: NgxSpinnerService) {}
